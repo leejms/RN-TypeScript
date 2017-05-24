@@ -1,8 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 
-// @flow
-const CenteredTitle = ({title}: {title: string}) => {
+const CenteredTitle = ({title}) => {
   return (
     <Text style={styles.container}>{title}</Text>
   )

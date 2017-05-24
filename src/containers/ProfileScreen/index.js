@@ -3,11 +3,10 @@ import { Button, ScrollView } from 'react-native'
 
 import CenteredTitle from '../../components/text/CenteredTitle'
 
-// @flow
 const HomeScreen = ({navigation}) => {
   return (
     <ScrollView>
-      <CenteredTitle title={1234} />
+      <CenteredTitle title={'Hello Profile'} />
       <Button onPress={() => navigation.goBack(null)} title='Go back' />
     </ScrollView>
   )
