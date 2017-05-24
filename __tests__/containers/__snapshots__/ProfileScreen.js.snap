@@ -17,7 +17,7 @@ exports[`<ProfileScreen /> matches snapshot 1`] = `
         }
       }
     >
-      Hello Profile!
+      1234
     </Text>
     <View
       accessibilityComponentType="button"

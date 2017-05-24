@@ -6,7 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "test": "jest",
+    "test": "flow && flow stop && standard --plugin flowtype --parser babel-eslint && jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
@@ -14,15 +14,25 @@
     "react-navigation": "^1.0.0-beta.9"
   },
   "devDependencies": {
-    "react": "16.0.0-alpha.6",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "1.9.2",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "flow-bin": "0.42.0",
     "jest": "20.0.3",
+    "react": "16.0.0-alpha.6",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "react-test-renderer": "16.0.0-alpha.6",
+    "standard": "^10.0.2"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "standard": {
+    "plugins": [
+      "flowtype"
+    ],
+    "parser": "babel-eslint"
   }
 }

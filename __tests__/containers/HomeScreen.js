@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import 'react-native'
 import React from 'react'
 import HomeScreen from '../../src/containers/HomeScreen'
@@ -6,10 +7,10 @@ import HomeScreen from '../../src/containers/HomeScreen'
 import renderer from 'react-test-renderer'
 
 describe('<HomeScreen />', () => {
-  it ('matches snapshot', () => {
+  it('matches snapshot', () => {
     const tree = renderer.create(
       <HomeScreen />
     ).toJSON()
-    expect (tree).toMatchSnapshot()
+    expect(tree).toMatchSnapshot()
   })
 })

@@ -15,6 +15,4 @@ const SimpleStack = StackNavigator({
   }
 })
 
-
 AppRegistry.registerComponent('RNProject', () => SimpleStack)
-
