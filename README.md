@@ -1,5 +1,14 @@
 # RNProject
-A React Native seed project using flow, enzyme, and mobx
+## A React Native seed project setup with
+* TypeScript
+* Jest
+* StackNavigator
 
+## Comming Soon
+* MobX
+* Standard element library
+* Jest touch tests
+* CodePush integration
 
-If standard is installed globally (i.e. npm install standard --global), then be sure to install eslint-plugin-flowtype globally as well, with npm install eslint-plugin-flowtype --global.
+### Special Thanks:
+Ronto Jose's great blog on getting TypeScript going:  https://medium.com/@rintoj/react-native-with-typescript-40355a90a5d7
